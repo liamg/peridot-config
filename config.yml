@@ -1,0 +1,22 @@
+# See https://github.com/liamg/peridot for help configuring peridot
+debug: false
+modules:
+  - name: git
+    source: builtin:git
+    variables:
+      email: liamgalvin@protonmail.com
+      username: Liam Galvin
+      editor: nvim
+      aliases:
+        - uc = reset --soft HEAD~1
+      ignores:
+        - .idea
+      extra: |
+        [url "git@github.com:"]
+          insteadOf = https://github.com/
+        [url "ssh://git@bitbucket.org/"]
+          insteadOf = https://bitbucket.org
+  - name: zsh
+    source: ./zsh
+
+

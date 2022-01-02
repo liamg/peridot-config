@@ -1,0 +1,3 @@
+files:
+- target: "{{ .user_home_dir }}/.zshrc"
+  template: ./zshrc
