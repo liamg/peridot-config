@@ -1,0 +1,9 @@
+
+# launch sway if we're logging in to the machine and it's installed
+if [[ -z $DISPLAY && $TTY = /dev/tty1 ]]; then
+	export MOZ_ENABLE_WAYLAND=1
+    flags=""
+    # if nvidia drivers are in use, apologise to sway via flags
+    pacman -Qi nvidia && flags="--my-next-gpu-wont-be-nvidia"
+    which sway && exec sway $flags
+fi

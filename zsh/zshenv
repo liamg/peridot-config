@@ -1,0 +1,23 @@
+### PATH CONFIG ###
+# rust
+export PATH="$PATH:$HOME/.cargo/bin"
+# ruby
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
+# go
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
+# local
+export PATH="$PATH:$HOME/.local/bin"
+###################
+
+# use neovim by default
+export EDITOR=nvim
+
+# go settings
+export GOPRIVATE=github.com/aquasecurity/*,bitbucket.org/scalock/*
+export GOSUMDB=off
+
+# FZF config for searching in vim
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git --exclude vendor'
+
+# grab some rust env vars
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"

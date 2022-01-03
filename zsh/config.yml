@@ -1,3 +1,10 @@
 files:
 - target: "{{ .user_home_dir }}/.zshrc"
-  template: ./zshrc
+  source: ./zshrc
+- target: "{{ .user_home_dir }}/.zprofile"
+  source: ./zprofile
+- target: "{{ .user_home_dir }}/.zshenv"
+  source: ./zshenv
+modules:
+  - name: oh-my-zsh
+    source: ./oh-my-zsh

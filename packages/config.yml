@@ -1,0 +1,123 @@
+modules:
+  - name: apt
+    source: builtin:apt
+    filters:
+      distro:
+        - ubuntu
+    variables:
+      packages:
+        - bat
+        - build-essential
+        - ca-certificates
+        - cmake
+        - curl
+        - dunst
+        - fd-find
+        - flameshot
+        - git
+        - gnupg
+        - htop
+        - jq
+        - libasound2-dev
+        - libssl-dev
+        - libdbus-1-dev
+        - libncurses-dev
+        - libssl-dev
+        - libpulse-dev
+        - libncursesw5-dev
+        - libdbus-1-dev
+        - libpulse-dev
+        - libssl-dev
+        - libxcb1-dev
+        - libxcb-render0-dev
+        - libxcb-shape0-dev
+        - libxcb-xfixes0-dev
+        - lsb-release
+        - neovim
+        - pkg-config
+        - playerctl
+        - python3-dev
+        - python3-pip
+        - regolith-look-midnight
+        - ripgrep
+        - tree
+        - unzip
+        - wget
+        - xclip
+        - libgtk-3-dev
+        - libpango1.0-dev
+        - libgdk-pixbuf2.0-dev
+        - libcairo2-dev
+        - libglib2.0-dev
+        - libgcc-8-dev
+        - glibc-source 
+  - name: pacman
+    source: builtin:pacman
+    filters:
+      distro:
+      - arch
+    variables:
+      packages:
+        - alacritty
+        - alsa-utils 
+        - autoconf
+        - automake
+        - base
+        - bat
+        - bbswitch
+        - bison
+        - code
+        - dhclient
+        - dhcpcd
+        - dmenu
+        - docker
+        - efibootmgr
+        - fakeroot
+        - firefox
+        - flex
+        - gcc
+        - git
+        - gnu-netcat
+        - grim
+        - grub
+        - gtk-layer-shell
+        - htop
+        - jq
+        - linux
+        - linux-firmware
+        - m4
+        - make
+        - man-db
+        - man-pages
+        - mesa-utils
+        - neovim
+        - net-tools
+        - networkmanager
+        - ntp
+        - openssh
+        - patch
+        - pkgconf
+        - pulseaudio
+        - qmk
+        - ripgrep
+        - ruby
+        - sl
+        - slurp
+        - steam
+        - sudo
+        - sway
+        - swaylock
+        - texinfo
+        - ttf-nerd-fonts-symbols
+        - vi
+        - vim
+        - wayland
+        - wget
+        - which
+        - xdg-desktop-portal-wlr
+        - xf86-video-nouveau
+        - xorg-xwayland
+        - yay
+        - zoom
+        - zsh
+  

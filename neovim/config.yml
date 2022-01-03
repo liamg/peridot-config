@@ -1,0 +1,19 @@
+files:
+  - target: "{{ .user_config_dir }}/nvim/init.lua"
+    source: ./init.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/plugins.lua"
+    source: ./plugins.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/treesitter.lua"
+    source: ./config/treesitter.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/go.lua"
+    source: ./config/go.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/colours.lua"
+    source: ./config/colours.lua
+    disable_templating: true
+scripts:
+  after_file_change:
+    command:  "nvim --headless +PackerInstall +GoInstallBinaries +qall"

@@ -1,0 +1,8 @@
+scripts:
+  should_install: 
+    command: "[[ ! -d $HOME/.oh-my-zsh ]]"
+  install:
+    command: 'curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh > /tmp/install.sh; sh /tmp/install.sh --unattended'
+modules:
+  - name: theme
+    source: ./p10k

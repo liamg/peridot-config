@@ -1,6 +1,8 @@
 # See https://github.com/liamg/peridot for help configuring peridot
 debug: false
 modules:
+  - name: packages
+    source: ./packages
   - name: git
     source: builtin:git
     variables:
@@ -11,6 +13,7 @@ modules:
         - uc = reset --soft HEAD~1
       ignores:
         - .idea
+        - .vscode
       extra: |
         [url "git@github.com:"]
           insteadOf = https://github.com/
@@ -18,5 +21,13 @@ modules:
           insteadOf = https://bitbucket.org
   - name: zsh
     source: ./zsh
-
-
+  - name: fonts
+    source: builtin:fonts
+    variables:
+      files:
+        - https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf
+        - https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Italic%20Nerd%20Font%20Complete%20Mono.ttf
+        - https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Bold%20Nerd%20Font%20Complete%20Mono.ttf
+        - https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf
+  - name: neovim
+    source: ./neovim
