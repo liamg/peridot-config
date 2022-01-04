@@ -11,9 +11,16 @@ files:
   - target: "{{ .user_config_dir }}/nvim/lua/config/go.lua"
     source: ./config/go.lua
     disable_templating: true
-  - target: "{{ .user_config_dir }}/nvim/lua/config/colours.lua"
-    source: ./config/colours.lua
+  - target: "{{ .user_config_dir }}/nvim/lua/config/gui.lua"
+    source: ./config/gui.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/tree.lua"
+    source: ./config/tree.lua
+    disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/floats.lua"
+    source: ./config/floats.lua
     disable_templating: true
 scripts:
   after_file_change:
-    command:  "nvim --headless +PackerInstall +GoInstallBinaries +qall"
+    interactive: true
+    command:  "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' && echo GoInstallBinaries | nvim --headless -Es"
