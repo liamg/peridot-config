@@ -1,4 +1,4 @@
-# Personal Peridot Config
+# My Peridot Config
 
 These are my personal dotfiles, managed with [peridot](https://github.com/liamg/peridot).
 
