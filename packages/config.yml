@@ -118,6 +118,7 @@ modules:
         - wayland
         - wget
         - which
+        - xdg-utils
         - xdg-desktop-portal-wlr
         - xf86-video-nouveau
         - xorg-xwayland
