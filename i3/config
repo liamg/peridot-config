@@ -169,3 +169,5 @@ for_window [class="microsoft teams - preview"] floating enable
 default_border pixel 0
 default_floating_border pixel 0
 
+focus_follows_mouse no
+

@@ -31,5 +31,6 @@ modules:
     source: ./gtk
   - name: i3
     source: ./i3
-
+  - name: sway
+    source: ./sway
 

@@ -1,0 +1,7 @@
+files:
+  - target: "{{ .user_config_dir }}/sway/config"
+    source: ./config
+scripts:
+  after_file_change:
+    command: swaymsg reload
+
