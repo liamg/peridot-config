@@ -119,4 +119,9 @@ modules:
         - yay
         - zoom
         - zsh
-  
+  - name: yay
+    source: builtin:yay
+    variables:
+      packages:
+        - noto-fonts-emoji
+
