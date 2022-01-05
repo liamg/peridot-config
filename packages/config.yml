@@ -84,7 +84,7 @@ modules:
         - grub
         - gtk-layer-shell
         - htop
-        - i3
+        - i3-gaps
         - i3lock
         - jq
         - linux
@@ -109,7 +109,6 @@ modules:
         - slurp
         - sudo
         - sway
-        - swayidle
         - swaylock
         - texinfo
         - ttf-nerd-fonts-symbols
