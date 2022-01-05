@@ -25,3 +25,6 @@ modules:
     source: ./alacritty
   - name: neovim
     source: ./neovim
+  - name: gtk
+    source: ./gtk
+
