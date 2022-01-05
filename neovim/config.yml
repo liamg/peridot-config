@@ -20,7 +20,10 @@ files:
   - target: "{{ .user_config_dir }}/nvim/lua/config/floats.lua"
     source: ./config/floats.lua
     disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/completion.lua"
+    source: ./config/completion.lua
+    disable_templating: true
 scripts:
   after_file_change:
     interactive: true
-    command:  "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' && echo GoInstallBinaries | nvim --headless -Es"
+    command:  "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' && echo GoInstallBinaries | nvim --headless -Es && echo 'TSInstall go' | nvim --headless -Es"

@@ -19,6 +19,8 @@ modules:
           insteadOf = https://github.com/
         [url "ssh://git@bitbucket.org/"]
           insteadOf = https://bitbucket.org
+  - name: fonts
+    source: ./fonts
   - name: zsh
     source: ./zsh
   - name: alacritty

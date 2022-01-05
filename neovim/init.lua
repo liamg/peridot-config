@@ -20,5 +20,8 @@ require('config.gui')
 -- set up treesitter
 require('config.treesitter')
 
+-- set up autocomplete/snippets
+require('config.completion')
+
 -- set up go (mainly ray-x/go.nvim)
 require('config.go')
