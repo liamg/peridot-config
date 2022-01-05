@@ -29,4 +29,7 @@ modules:
     source: ./neovim
   - name: gtk
     source: ./gtk
+  - name: i3
+    source: ./i3
+
 

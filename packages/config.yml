@@ -17,6 +17,8 @@ modules:
         - git
         - gnupg
         - htop
+        - i3wm
+        - i3lock
         - jq
         - libasound2-dev
         - libssl-dev
@@ -82,6 +84,8 @@ modules:
         - grub
         - gtk-layer-shell
         - htop
+        - i3
+        - i3lock
         - jq
         - linux
         - linux-firmware
@@ -105,6 +109,7 @@ modules:
         - slurp
         - sudo
         - sway
+        - swayidle
         - swaylock
         - texinfo
         - ttf-nerd-fonts-symbols

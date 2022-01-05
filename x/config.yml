@@ -1,0 +1,4 @@
+files:
+  - target: "{{ /user_home_dir }}/.xinitrc"
+    source: ./xinitrc
+
