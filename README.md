@@ -17,6 +17,8 @@ These are my personal dotfiles, managed with [peridot](https://github.com/liamg/
 | `<A-z>`      | Close all but current buffer
 | `<C-p>`      | Magic pick buffer
 | `<C-e>`      | Close floating window
+| `<leader>j`  | Open terminal
+| `<Esc>`      | Close terminal
 
 ### Git
 

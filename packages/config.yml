@@ -76,6 +76,7 @@ modules:
         - efibootmgr
         - fakeroot
         - firefox
+        - flameshot
         - flex
         - gcc
         - git

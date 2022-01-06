@@ -4,6 +4,19 @@ vim.g.tokyonight_style = "night"
 vim.cmd[[set termguicolors]]
 vim.cmd[[silent! colorscheme tokyonight]]
 
+
+-- nice map function
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+-- terminal
+map('n', '<leader>j', ':terminal<CR>a', opts)
+map('t', '<Esc>', '<C-\\><C-n>:q<CR>', opts)
+
+-- save all
+map('n', '<C-s>', ':wall<CR>', opts)
+map('n', '<C-q>', ':qall<CR>', opts)
+
 -- lualine (at bottom)
 local ok, lualine = pcall(require, 'lualine')
 if ok then
@@ -178,9 +191,6 @@ if ok then
     }
 end
 
--- nice map function
-local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
 
 -- toggle tree
 map('n', '<leader>n', ':lua require("config.tree").toggle()<CR>', opts)
