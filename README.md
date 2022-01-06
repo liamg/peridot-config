@@ -40,6 +40,10 @@ See https://github.com/kyazdani42/nvim-tree.lua#default-actions
 
 | binding      | command    |   |
 | ------------ | ---------- | - |
+| `<C-]>`      | | Go to definition |
+| `<C-o>`      | | Go back  |
+| `gi`         | | Go to implementation |
+| `gr`         | | Go to references |
 | `<leader>gc` |            | Generate comment
 |              | GoLint     | Lint
 | `<leader>gt` | GoAddTag   |             
