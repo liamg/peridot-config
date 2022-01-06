@@ -1,5 +1,6 @@
 
 -- set theme
+vim.g.tokyonight_style = "night"
 vim.cmd[[set termguicolors]]
 vim.cmd[[silent! colorscheme tokyonight]]
 
