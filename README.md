@@ -19,6 +19,7 @@ These are my personal dotfiles, managed with [peridot](https://github.com/liamg/
 | `<C-e>`      | Close floating window
 | `<leader>j`  | Open terminal
 | `<Esc>`      | Close terminal
+| `<C-w>w`     | Siwtch to floating window
 
 ### Git
 
