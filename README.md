@@ -19,7 +19,9 @@ These are my personal dotfiles, managed with [peridot](https://github.com/liamg/
 | `<C-e>`      | Close floating window
 | `<leader>j`  | Open terminal
 | `<Esc>`      | Close terminal
-| `<C-w>w`     | Siwtch to floating window
+| `<C-w>w`     | Switch to floating window
+| `<leader>ff` | Search by filename
+| `<leader>fe` | Search by file content
 
 ### Git
 

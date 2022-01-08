@@ -75,6 +75,7 @@ modules:
         - docker
         - efibootmgr
         - fakeroot
+        - fd
         - firefox
         - flameshot
         - flex

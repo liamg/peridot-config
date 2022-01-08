@@ -9,6 +9,10 @@ vim.cmd[[silent! colorscheme tokyonight]]
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- search
+map('n', '<leader>ff', ':Files<CR>', opts)
+map('n', '<leader>fe', ':Rg<CR>', opts)
+
 -- terminal
 map('n', '<leader>j', ':terminal<CR>a', opts)
 map('t', '<Esc>', '<C-\\><C-n>:q<CR>', opts)
