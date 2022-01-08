@@ -3,7 +3,7 @@ start_wayland() {
 	export MOZ_ENABLE_WAYLAND=1
     flags=""
     # if nvidia drivers are in use, apologise to sway via flags
-    pacman -Qi nvidia && flags="--my-next-gpu-wont-be-nvidia"
+    pacman -Qi nvidia >/dev/null && flags="--my-next-gpu-wont-be-nvidia"
     which sway >/dev/null && exec sway $flags
 }
 
