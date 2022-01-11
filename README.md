@@ -2,6 +2,8 @@
 
 These are my personal dotfiles, managed with [peridot](https://github.com/liamg/peridot).
 
+Currently for Arch + Ubuntu, though will likely work in many other places.
+
 ## Neovim 
 
 ![neovim](./screenshot-neovim.png)
