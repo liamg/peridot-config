@@ -114,6 +114,7 @@ modules:
         - swaylock
         - texinfo
         - ttf-nerd-fonts-symbols
+        - ttf-roboto
         - vi
         - vim
         - wayland

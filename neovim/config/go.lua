@@ -82,7 +82,7 @@ if ok then
       })
 
     -- Import on save
-    vim.api.nvim_exec([[ autocmd BufWritePre *.go :silent! lua require('go.format').goimport() ]], false)
+    vim.api.nvim_exec([[autocmd BufWritePre *.go :silent! lua require('go.format').goimport()]], false)
 
     -- misc keybindings
     vim.cmd("autocmd FileType go nmap <Leader>gc :lua require('go.comment').gen()<CR>")
