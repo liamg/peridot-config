@@ -10,7 +10,7 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- search
-map('n', '<leader>ff', ':Files<CR>', opts)
+map('n', '<leader>fn', ':Files<CR>', opts)
 map('n', '<leader>fe', ':Rg<CR>', opts)
 
 -- terminal

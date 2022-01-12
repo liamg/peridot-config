@@ -11,6 +11,7 @@ modules:
         - ca-certificates
         - cmake
         - curl
+        - dnsutils
         - dunst
         - fd-find
         - flameshot
@@ -72,6 +73,7 @@ modules:
         - dhclient
         - dhcpcd
         - dmenu
+        - dnsutils
         - docker
         - efibootmgr
         - fakeroot
