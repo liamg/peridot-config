@@ -171,7 +171,7 @@ if ok then
       },
       git = {
         enable = true,
-        ignore = true,
+        ignore = false,
         timeout = 500,
       },
       view = {
