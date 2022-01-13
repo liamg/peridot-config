@@ -115,6 +115,8 @@ modules:
         - sway
         - swaylock
         - texinfo
+        - ttf-dejavu
+        - ttf-droid
         - ttf-nerd-fonts-symbols
         - ttf-roboto
         - vi
