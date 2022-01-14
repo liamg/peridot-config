@@ -54,12 +54,6 @@ return require('packer').startup(function()
     }
   }
 
-  -- buffer tabs gui
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
-
   -- debugging
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
