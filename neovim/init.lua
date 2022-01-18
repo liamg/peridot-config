@@ -2,6 +2,8 @@
 -- set leader to space
 vim.g.mapleader = " "
 
+vim.opt.mouse = 'a'
+
 -- enable line numbers
 vim.wo.number = true
 
