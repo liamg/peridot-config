@@ -22,7 +22,7 @@ Currently for Arch + Ubuntu, though will likely work in many other places.
 | `<leader>j`  | Open terminal
 | `<Esc>`      | Close terminal
 | `<C-w>w`     | Switch to floating window
-| `<leader>ff` | Search by filename
+| `<leader>fn` | Search by filename
 | `<leader>fe` | Search by file content
 
 ### Git
@@ -83,7 +83,7 @@ Also see https://github.com/ray-x/navigator.lua/blob/master/lua/navigator/lspcli
 | binding      | command          | Description                                      |
 | ------------ | ---------------- | ------------------------------------------------ |
 | `<leader>dd` | GoDebug          | start debug session                              |
-| `<leader>dt` | GoDebug test     | start debug session for go test file             |
+| `<leader>dT` | GoDebug test     | start debug session for go test file             |
 | `<leader>dr` | GoDebug restart  | restart debug session for go test file           |
 | `<leader>dn` | GoDebug nearest  | start debug session for nearest go test function |
 | `<leader>ds` | GoDebug stop     | stop debug session and unmap debug keymap        |

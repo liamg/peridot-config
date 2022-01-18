@@ -95,7 +95,7 @@ if ok then
     -- debug bindings
     
     vim.cmd("autocmd FileType go nmap <Leader>dd :GoDebug<CR>")
-    vim.cmd("autocmd FileType go nmap <Leader>dt :GoDebug test<CR>")
+    vim.cmd("autocmd FileType go nmap <Leader>dT :GoDebug test<CR>")
     vim.cmd("autocmd FileType go nmap <Leader>dr :GoDebug restart<CR>")
     vim.cmd("autocmd FileType go nmap <Leader>dn :GoDebug nearest<CR>")
     vim.cmd("autocmd FileType go nmap <Leader>ds :GoDebug stop<CR>")
