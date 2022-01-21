@@ -9,7 +9,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colour scheme
-  use 'folke/tokyonight.nvim'
+  use "projekt0n/github-nvim-theme"
 
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'

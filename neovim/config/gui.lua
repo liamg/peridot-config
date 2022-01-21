@@ -1,9 +1,17 @@
 
 -- set theme
-vim.g.tokyonight_style = "night"
 vim.cmd[[set termguicolors]]
-vim.cmd[[silent! colorscheme tokyonight]]
-
+local ok, theme = pcall(require, 'github-theme')
+if ok then
+    theme.setup({
+      theme_style = "dark",
+      function_style = "italic",
+      keyword_style = "italic",
+      variable_style = "italic",
+      msg_area_style = "NONE",
+      sidebars = {"terminal", "packer"},
+    })
+end
 
 -- nice map function
 local map = vim.api.nvim_set_keymap
@@ -25,11 +33,11 @@ map('n', '<C-q>', ':qall<CR>', opts)
 -- lualine (at bottom)
 local ok, lualine = pcall(require, 'lualine')
 if ok then
-    lualine.setup {
+    lualine.setup({
         options = {
-            theme = 'tokyonight'
+            theme = "github"
         }
-    }
+    })
 end
 
 -- git magic
