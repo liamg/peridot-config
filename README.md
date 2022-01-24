@@ -59,6 +59,8 @@ See https://github.com/kyazdani42/nvim-tree.lua#default-actions
 | `<leader>fS` | GoFillSwitch | fill switch                                                   |
 | `<leader>ie` | GoIfErr      | Add if err                                                    |
 | `<leader>fp` | GoFixPlurals | change func foo(b int, a int, r int) -> func foo(b, a, r int) |
+| `K`          | | Show signature |
+| `<C-k>`      | | Show signature help (`<C-e>` to close) |
 
 Also see https://github.com/ray-x/navigator.lua/blob/master/lua/navigator/lspclient/mapping.lua#L14
 
