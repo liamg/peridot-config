@@ -10,6 +10,7 @@ if ok then
       variable_style = "italic",
       msg_area_style = "NONE",
       sidebars = {"terminal", "packer"},
+      colors = { bg_search = "#bb4400" },
     })
 end
 
