@@ -24,5 +24,9 @@ require('config.treesitter')
 -- set up autocomplete/snippets
 require('config.completion')
 
+-- orgmode
+require('config.org')
+
 -- set up go (mainly ray-x/go.nvim)
 require('config.go')
+

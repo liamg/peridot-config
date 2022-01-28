@@ -23,6 +23,9 @@ files:
   - target: "{{ .user_config_dir }}/nvim/lua/config/completion.lua"
     source: ./config/completion.lua
     disable_templating: true
+  - target: "{{ .user_config_dir }}/nvim/lua/config/org.lua"
+    source: ./config/org.lua
+    disable_templating: true
 scripts:
   after_file_change:
     interactive: true

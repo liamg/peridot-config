@@ -27,6 +27,11 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  use {'nvim-orgmode/orgmode', config = function()
+      require('orgmode').setup{}
+    end
+  }
+
   -- go - see https://github.com/ray-x/go.nvim for info on most of these
   use 'ray-x/go.nvim'
   use {'ray-x/navigator.lua', requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}}
@@ -60,9 +65,22 @@ return require('packer').startup(function()
   use 'rcarriga/nvim-dap-ui'
   use 'theHamsta/nvim-dap-virtual-text'
 
+  -- zen
+  use {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      }
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
 end)
+

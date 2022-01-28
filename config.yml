@@ -3,6 +3,8 @@ debug: false
 modules:
   - name: packages
     source: ./packages
+  - name: git templates
+    source: ./git-templates
   - name: git
     source: builtin:git
     variables:
@@ -15,6 +17,8 @@ modules:
         - .idea
         - .vscode
       extra: |
+        [init]
+        	templatedir = ~/.git-templates
         [url "git@github.com:"]
           insteadOf = https://github.com/
         [url "ssh://git@bitbucket.org/"]

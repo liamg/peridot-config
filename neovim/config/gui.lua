@@ -25,7 +25,7 @@ map('n', '<leader>b', ':Buffers<CR>', opts)
 
 -- terminal
 map('n', '<leader>j', ':terminal<CR>a', opts)
-map('t', '<Esc>', '<C-\\><C-n>:q<CR>', opts)
+map('t', '<Esc>', '<C-\\><C-n>', opts)
 
 -- save all
 map('n', '<C-s>', ':wall<CR>', opts)
@@ -209,8 +209,17 @@ end
 -- toggle tree
 map('n', '<leader>n', ':NvimTreeToggle<CR>', opts)
 
+-- toggle zen mode
+map('n', '<leader>z', ':ZenMode<CR>', opts)
+
 -- close floating windows
 map('n', '<C-e>', ':lua require("config.floats").close()<CR>', opts)
 
 -- trigger code action
 map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>', opts)
+
+-- google current word
+map('n', '<leader>gg', ":! xdg-open 'https://google.com/search?q=<cword>'<CR>", opts)
+
+
+
