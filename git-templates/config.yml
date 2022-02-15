@@ -1,4 +1,4 @@
 files:
   - source: ./commit-msg-hook.sh
-    target: "{{ .user_home_dir }}}/git-templates/commit-msg"
+    target: "{{ .user_home_dir }}/git-templates/commit-msg"
 

@@ -161,6 +161,7 @@ bar {
 
 # set keyboard map to uk
 exec "setxkbmap gb"
+exec --no-startup-id "flameshot"
 
 # float zoom and teams windows
 for_window [class="zoom"] floating enable
