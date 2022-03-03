@@ -9,8 +9,13 @@ if ok then
       keyword_style = "italic",
       variable_style = "italic",
       msg_area_style = "NONE",
-      sidebars = {"terminal", "packer"},
-      colors = { bg_search = "#bb4400" },
+      sidebars = {"terminal", "packer", "nvim-tree"},
+      colors = { 
+            bg_search = "#181818", 
+            bg = "#181818",
+            bg2 = "#181818",
+            border = "#252525",
+        },
     })
 end
 
@@ -204,6 +209,7 @@ if ok then
       }  
     }
 end
+vim.cmd[[highlight NvimTreeNormal guibg=#181818]]
 
 
 -- toggle tree

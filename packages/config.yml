@@ -105,6 +105,7 @@ modules:
         - openssh
         - patch
         - pkgconf
+        - playerctl
         - pulseaudio
         - qmk
         - ripgrep
@@ -137,4 +138,5 @@ modules:
       packages:
         - noto-fonts-emoji
         - polybar
+        - nerd-fonts-complete
 
