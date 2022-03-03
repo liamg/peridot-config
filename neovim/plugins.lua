@@ -27,11 +27,6 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
-  use {'nvim-orgmode/orgmode', config = function()
-      require('orgmode').setup{}
-    end
-  }
-
   -- go - see https://github.com/ray-x/go.nvim for info on most of these
   use 'ray-x/go.nvim'
   use {'ray-x/navigator.lua', requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}}

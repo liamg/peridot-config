@@ -1,0 +1,6 @@
+files:
+  - target: "{{ .user_config_dir }}/polybar/config.ini"
+    source: ./config.ini
+  - target: "{{ .user_config_dir }}/polybar/launch.sh"
+    source: ./launch.sh
+

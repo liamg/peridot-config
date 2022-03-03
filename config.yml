@@ -37,4 +37,6 @@ modules:
     source: ./i3
   - name: sway
     source: ./sway
+  - name: polybar
+    source: ./polybar
 
