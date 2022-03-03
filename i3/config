@@ -160,7 +160,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # set keyboard map to uk
-exec "setxkbmap gb"
+exec --no-startup-id "setxkbmap gb"
 exec --no-startup-id "flameshot"
 
 # float zoom and teams windows
@@ -177,4 +177,5 @@ bindsym Print exec flameshot gui
 bindsym $mod+Print exec flameshot screen
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id feh --bg-fill $HOME/wallpaper.jpg
 

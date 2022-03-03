@@ -1,7 +1,9 @@
 files:
   - target: "{{ .user_config_dir }}/polybar/config.ini"
     source: ./config.ini
-    disable_templating: true
   - target: "{{ .user_config_dir }}/polybar/launch.sh"
     source: ./launch.sh
+  - target: "{{ .user_config_dir }}/polybar/player.sh"
+    source: ./player.sh
+    disable_templating: true
 

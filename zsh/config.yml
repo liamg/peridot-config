@@ -5,6 +5,3 @@ files:
   source: ./zprofile
 - target: "{{ .user_home_dir }}/.zshenv"
   source: ./zshenv
-modules:
-  - name: oh-my-zsh
-    source: ./oh-my-zsh

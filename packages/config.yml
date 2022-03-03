@@ -78,6 +78,7 @@ modules:
         - efibootmgr
         - fakeroot
         - fd
+        - feh
         - firefox
         - flameshot
         - flex

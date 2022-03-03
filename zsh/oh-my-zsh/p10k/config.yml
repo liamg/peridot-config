@@ -1,9 +1,0 @@
-scripts:
-  should_install:
-    command: '[[ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]]'
-  install:
-    command: 'git clone "https://github.com/romkatv/powerlevel10k" "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"'
-files:
-  - target: "{{ .user_home_dir }}/.p10k.zsh"
-    source: ./p10k.zsh
-    disable_templating: false
