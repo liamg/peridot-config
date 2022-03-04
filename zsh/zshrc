@@ -41,3 +41,7 @@ source_if_exists () {
 export NVM_DIR="$HOME/.nvm"
 source_if_exists "$NVM_DIR/nvm.sh"  # This loads nvm
 source_if_exists "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+prompt() { export PROMPT=$(bearings -e $?); }
+export PROMPT_COMMAND=prompt
+precmd() { prompt; }
