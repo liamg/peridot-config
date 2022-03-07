@@ -1,0 +1,27 @@
+#!/usr/bin/zsh
+
+function git_current_branch() {
+  local ref
+  ref=$(git symbolic-ref --quiet HEAD 2>/dev/null)
+  local ret=$?
+  if [[ $ret != 0 ]]; then
+    [[ $ret == 128 ]] && return
+    ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  fi
+  echo ${ref#refs/heads/}
+}
+
+# alias vim to nvim
+alias vim=nvim
+alias pe="cd ~/.config/peridot && nvim . -c ':e neovim/plugins.lua'"
+
+
+# fix for bat alias where needed
+which bat >/dev/null 2>&1 || (which batcat && alias bat="batcat")
+
+alias gcam='git commit -a -m'
+alias gcb='git checkout -b'
+alias gl='git pull'
+alias gp='git push --set-upstream origin $(git_current_branch)'
+
+

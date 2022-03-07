@@ -1,6 +1,8 @@
 files:
 - target: "{{ .user_home_dir }}/.zshrc"
   source: ./zshrc
+- target: "{{ .user_home_dir }}/.zshaliases"
+  source: ./aliases
 - target: "{{ .user_home_dir }}/.zprofile"
   source: ./zprofile
 - target: "{{ .user_home_dir }}/.zshenv"
