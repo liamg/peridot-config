@@ -7,3 +7,5 @@ files:
   source: ./zprofile
 - target: "{{ .user_home_dir }}/.zshenv"
   source: ./zshenv
+- target: "{{ .user_config_dir }}/bearings/config.yml"
+  source: ./bearings.yml
