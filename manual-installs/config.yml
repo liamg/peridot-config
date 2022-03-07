@@ -1,0 +1,7 @@
+modules:
+  - name: bearings
+    source: ./go
+    variables:
+      binary: bearings
+      module: github.com/liamg/bearings
+

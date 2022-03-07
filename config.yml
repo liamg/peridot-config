@@ -39,4 +39,6 @@ modules:
     source: ./sway
   - name: polybar
     source: ./polybar
+  - name: manual installs
+    source: ./manual-installs
 

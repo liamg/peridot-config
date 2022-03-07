@@ -1,0 +1,11 @@
+variables:
+  - name: binary
+    required: true
+  - name: module
+    required: true
+scripts:
+  should_install:
+    command: "! which bearings"
+  install: 
+    command: "go install {{ .module }}@latest"
+
