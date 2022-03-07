@@ -40,5 +40,8 @@ modules:
   - name: polybar
     source: ./polybar
   - name: manual installs
+    depends_on:
+      - zsh
+      - packages
     source: ./manual-installs
 
