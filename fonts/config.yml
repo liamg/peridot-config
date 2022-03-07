@@ -1,12 +1,3 @@
-modules:
-  - name: fonts
-    source: builtin:fonts
-    variables:
-      files:
-        - "https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf"
-        - "https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Italic%20Nerd%20Font%20Complete%20Mono.ttf"
-        - "https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Bold%20Nerd%20Font%20Complete%20Mono.ttf"
-        - "https://github.com/liamg/dotfiles/raw/master/hack/fonts/Hack%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf"
 files:
   - target: "{{ .user_config_dir }}/fontconfig/fonts.conf"
     source: ./fonts.conf
