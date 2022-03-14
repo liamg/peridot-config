@@ -5,6 +5,9 @@ fg: "#d0d0d0"
 bg: "#292929"
 lines_above: 1
 modules:
+- type: duration
+  threshold: 3s
+  bg: "#9800e8"
 - type: exitcode
   show_success: false
   failure_fg: "#ffffff"
@@ -18,3 +21,4 @@ modules:
   bg: "#292929"
   separator_fg: "#444444"
   home_text: ""
+  bold: true

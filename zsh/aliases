@@ -27,7 +27,7 @@ which bat >/dev/null 2>&1 || (which batcat && alias bat="batcat")
 
 # git shiz
 alias gs='git status --ignored'
-alias gcm='git commit -m'
+alias gcm='git checkout master 2>/dev/null || git checkout main'
 alias gcam='git commit -a -m'
 alias guc='git reset --soft HEAD~1'
 alias gcb='git checkout -b'
