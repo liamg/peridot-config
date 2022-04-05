@@ -32,5 +32,5 @@ alias gcam='git commit -a -m'
 alias guc='git reset --soft HEAD~1'
 alias gcb='git checkout -b'
 alias gl='git pull'
-alias gp='git push --set-upstream origin $(git_current_branch)'
+alias gp='git push --set-upstream origin "$(git_current_branch)"'
 
