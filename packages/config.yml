@@ -139,4 +139,5 @@ modules:
         - noto-fonts-emoji
         - polybar
         - nerd-fonts-complete
+        - hyprland-git
 

@@ -1,5 +1,5 @@
 
-start_wayland() {
+start_sway() {
 	export MOZ_ENABLE_WAYLAND=1
     flags=""
     # if nvidia drivers are in use, apologise to sway via flags
@@ -7,8 +7,18 @@ start_wayland() {
     which sway >/dev/null && exec sway $flags
 }
 
-# launch sway if we're logging in to the machine and it's installed
-if [[ -z $DISPLAY && $TTY = /dev/tty1 ]]; then
-    which startx 2>&1 >/dev/null && startx || start_wayland
-fi
+
+echo
+echo "1. X"
+echo "2. Sway"
+echo "3. Hyprland"
+echo "4. Shell"
+echo
+
+read REPLY\?"Enter your choice: "
+echo
+
+[[ "$REPLY" == "1" ]] && startx
+[[ "$REPLY" == "2" ]] && start_sway
+[[ "$REPLY" == "3" ]] && Hyprland
 

@@ -1,0 +1,5 @@
+files:
+  - target: "{{ .user_config_dir }}/hypr/hyprland.conf"
+    source: ./hyprland.conf
+    disable_templating: true
+

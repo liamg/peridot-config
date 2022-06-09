@@ -39,6 +39,8 @@ modules:
     source: ./sway
   - name: polybar
     source: ./polybar
+  - name: hyprland
+    source: ./hyprland
   - name: manual installs
     depends_on:
       - zsh
