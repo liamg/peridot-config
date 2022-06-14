@@ -89,8 +89,6 @@ modules:
         - grub
         - gtk-layer-shell
         - htop
-        - i3-gaps
-        - i3lock
         - jq
         - linux
         - linux-firmware
@@ -122,6 +120,7 @@ modules:
         - ttf-roboto
         - vi
         - vim
+        - waybar
         - wayland
         - wget
         - which
@@ -130,7 +129,6 @@ modules:
         - xf86-video-nouveau
         - xorg-xwayland
         - yay
-        - zoom
         - zsh
   - name: yay
     source: builtin:yay
@@ -140,4 +138,5 @@ modules:
         - polybar
         - nerd-fonts-complete
         - hyprland-git
+        - zoom
 
