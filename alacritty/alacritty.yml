@@ -14,31 +14,3 @@ font:
 
   size: 10.0
 
-colors:
-  primary:
-    background: '0x181818'
-    foreground: '0xfcfcfa'
-
-  normal:
-    black:   '0x939293'
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0xfc9867'
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-    white:   '0xfcfcfa'
-
-  bright:
-    black:   '0x939293'
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0xfc9867'
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-
-  indexed_colors:
-    - { index: 16, color: '0xd18616' }
-    - { index: 17, color: '0xf97583' }
-
