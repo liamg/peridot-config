@@ -23,6 +23,8 @@ modules:
           insteadOf = https://github.com/
         [url "ssh://git@bitbucket.org/"]
           insteadOf = https://bitbucket.org
+        [push]
+          autoSetupRemote = true
   - name: fonts
     source: ./fonts
   - name: zsh

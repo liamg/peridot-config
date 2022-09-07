@@ -166,6 +166,9 @@ exec --no-startup-id "flameshot"
 # float zoom and teams windows
 for_window [class="zoom"] floating enable
 
+# focus jetbrains rename windows
+for_window [class="^jetbrains-.+"][window_type=dialog] focus
+
 default_border pixel 0
 default_floating_border pixel 0
 

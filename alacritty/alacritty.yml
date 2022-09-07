@@ -11,6 +11,5 @@ font:
   bold_italic:
     family: override
     style: Bold Italic
-
-  size: 14.0
+  size: 12.0
 
